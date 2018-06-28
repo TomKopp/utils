@@ -1,0 +1,14 @@
+{
+  "name": "witzbouldsutils",
+  "version": "0.0.1",
+  "description": "witzbould's utility functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "utils"
+  ],
+  "author": "witzbould",
+  "license": "MIT"
+}
