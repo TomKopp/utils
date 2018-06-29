@@ -6,3 +6,5 @@
  * @returns {Number} min <= val <= max
  */
 export const clampValue = (val, min, max) => Math.min(Math.max(min, val), max);
+
+export default clampValue;

@@ -22,3 +22,5 @@ export const throttle = (func, wait, immediate) => {
 		}
 	};
 };
+
+export default throttle;

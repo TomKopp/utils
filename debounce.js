@@ -21,3 +21,5 @@ export const debounce = (func, wait, immediate) => {
 		}
 	};
 };
+
+export default debounce;
