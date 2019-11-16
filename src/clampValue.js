@@ -1,9 +1,10 @@
 /**
  * Clamp value between min and max (inclusive)
- * @param {Number} val value to clamp
- * @param {Number} min minimum value
- * @param {Number} max maximum value
- * @returns {Number} min <= val <= max
+ *
+ * @param {number} val value to clamp
+ * @param {number} min minimum value
+ * @param {number} max maximum value
+ * @returns {number} min <= val <= max
  */
 export const clampValue = (val, min, max) => Math.min(Math.max(min, val), max);
 
