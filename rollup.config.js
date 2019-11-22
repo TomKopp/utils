@@ -13,8 +13,6 @@ const extensions = [
 	, '.jsx'
 ];
 
-const name = String(pkg.name).replace(/-/g, '');
-
 export default {
 	input: './src/index.js'
 
@@ -64,7 +62,7 @@ export default {
 			file: pkg.browser
 			, format: 'iife'
 			, sourcemap: true
-			, name
+			, name: 'utils'
 
 			// https://rollupjs.org/guide/en#output-globals-g-globals
 			, globals: {}
