@@ -19,5 +19,3 @@ export const jsonParseSync = (data) => {
 
 	return ret;
 };
-
-export default jsonParse;
