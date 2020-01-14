@@ -1,1 +1,1 @@
-export const ExpectedFunctionError = TypeError('Expected a function');
+export const ErrorFunctionExpected = TypeError('Expected a function');
