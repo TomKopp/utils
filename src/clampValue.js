@@ -1,6 +1,7 @@
 /**
  * Clamp value between min and max (inclusive)
  *
+ * @exports
  * @param {number} val value to clamp
  * @param {number} min minimum value
  * @param {number} max maximum value

@@ -5,6 +5,8 @@ import { ErrorFunctionExpected } from './errors';
  * trigger every N milliseconds. If `immediate` is passed, trigger the
  * function on the leading edge, instead of the trailing.
  *
+ * @see {@link https://davidwalsh.name/javascript-debounce-function|javascript-debounce-function} for further information.
+ * @exports
  * @param {Function} func Callable to be throttled.
  * @param {number} wait Time to wait between each call. In Milliseconds.
  * @param {boolean} [immediate=false] Flag to indicate that the function should be called at the leading edge of the timeout.
@@ -32,6 +34,7 @@ export const throttle = (func, wait, immediate = false) => {
  * trigger every `requestAnimationFrame()`. If `immediate` is passed, trigger the
  * function on the leading edge, instead of the trailing.
  *
+ * @exports
  * @param {Function} func Callable to be throttled.
  * @param {boolean} [immediate=false] Flag to indicate that the function should be called at the leading edge of the timeout.
  * @returns {Function} The throttled function

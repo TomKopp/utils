@@ -7,6 +7,7 @@ import { ErrorFunctionExpected } from './errors';
  * leading edge, instead of the trailing.
  *
  * @see {@link https://davidwalsh.name/javascript-debounce-function|javascript-debounce-function} for further information.
+ * @exports
  * @param {Function} func Callable that will be debounced.
  * @param {number} wait Time to wait before the function could be called. In Milliseconds.
  * @param {boolean} [immediate=false] Flag to indicate, that the function should be called at the leading edge of the timeout.
