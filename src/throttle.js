@@ -10,22 +10,30 @@ import { ErrorFunctionExpected } from './errors';
  * @param {Function} func Callable to be throttled.
  * @param {number} wait Time to wait between each call. In Milliseconds.
  * @param {boolean} [immediate=false] Flag to indicate that the function should be called at the leading edge of the timeout.
- * @returns {Function} The throttled function
+ * @return {Function} The throttled function
  */
 export const throttle = (func, wait, immediate = false) => {
-	if (typeof func !== 'function') { throw new ErrorFunctionExpected(); }
+	if (typeof func !== 'function') {
+		throw new ErrorFunctionExpected();
+	}
 
 	let timeout;
 
 	return function throttled(...args) {
 		const later = () => {
 			timeout = null;
-			if (!immediate) { func.apply(this, args); }
+			if (!immediate) {
+				func.apply(this, args);
+			}
 		};
 		const callNow = immediate && !timeout;
 
-		if (!timeout) { timeout = setTimeout(later, wait); }
-		if (callNow) { func.apply(this, args); }
+		if (!timeout) {
+			timeout = setTimeout(later, wait);
+		}
+		if (callNow) {
+			func.apply(this, args);
+		}
 	};
 };
 
@@ -37,21 +45,29 @@ export const throttle = (func, wait, immediate = false) => {
  * @exports
  * @param {Function} func Callable to be throttled.
  * @param {boolean} [immediate=false] Flag to indicate that the function should be called at the leading edge of the timeout.
- * @returns {Function} The throttled function
+ * @return {Function} The throttled function
  */
 export const rAFthrottle = (func, immediate = false) => {
-	if (typeof func !== 'function') { throw new ErrorFunctionExpected(); }
+	if (typeof func !== 'function') {
+		throw new ErrorFunctionExpected();
+	}
 
 	let rAFid;
 
 	return function throttled(...args) {
 		const later = () => {
 			rAFid = null;
-			if (!immediate) { func.apply(this, args); }
+			if (!immediate) {
+				func.apply(this, args);
+			}
 		};
 		const callNow = immediate && !rAFid;
 
-		if (!rAFid) { rAFid = requestAnimationFrame(later); }
-		if (callNow) { func.apply(this, args); }
+		if (!rAFid) {
+			rAFid = requestAnimationFrame(later);
+		}
+		if (callNow) {
+			func.apply(this, args);
+		}
 	};
 };

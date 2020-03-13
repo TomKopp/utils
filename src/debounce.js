@@ -11,17 +11,21 @@ import { ErrorFunctionExpected } from './errors';
  * @param {Function} func Callable that will be debounced.
  * @param {number} wait Time to wait before the function could be called. In Milliseconds.
  * @param {boolean} [immediate=false] Flag to indicate, that the function should be called at the leading edge of the timeout.
- * @returns {Function} The debounced function.
+ * @return {Function} The debounced function.
  */
 export const debounce = (func, wait, immediate = false) => {
-	if (typeof func !== 'function') { throw new ErrorFunctionExpected(); }
+	if (typeof func !== 'function') {
+		throw new ErrorFunctionExpected();
+	}
 
 	let timeout;
 
 	return function debounced(...args) {
 		const later = () => {
 			timeout = null;
-			if (!immediate) { func.apply(this, args); }
+			if (!immediate) {
+				func.apply(this, args);
+			}
 		};
 
 		const callNow = immediate && !timeout;
@@ -29,6 +33,8 @@ export const debounce = (func, wait, immediate = false) => {
 		clearTimeout(timeout);
 		timeout = setTimeout(later, wait);
 
-		if (callNow) { func.apply(this, args); }
+		if (callNow) {
+			func.apply(this, args);
+		}
 	};
 };

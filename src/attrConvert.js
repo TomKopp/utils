@@ -3,15 +3,15 @@
  *
  * @exports
  * @param {string} val attribute value
- * @returns {boolean} boolean interpretation of attribute
+ * @return {boolean} boolean interpretation of attribute
  */
-export const attr2bool = (val) => { return val !== null; }
+export const attr2bool = (val) => val !== null;
 
 /**
  * Converts a boolean value to a boolean attribute value
  *
  * @exports
  * @param {boolean} val a boolean
- * @returns {(string | null)} empty strign if attribute should exist, else null
+ * @return {(string | null)} empty strign if attribute should exist, else null
  */
-export const bool2attr = (val) => { return val ? '' : null; }
+export const bool2attr = (val) => (val ? '' : null);
