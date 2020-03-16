@@ -2,8 +2,8 @@
   "name": "@witzbould/utils",
   "version": "2.1.0",
   "description": "witzbould's utility functions",
-  "main": "src/index.js",
-  "module": "src/index.js",
+  "main": "index.js",
+  "module": "index.js",
   "type": "module",
   "scripts": {
     "lint": "eslint -f=table \"./src/*.js\"",
