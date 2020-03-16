@@ -1,6 +1,6 @@
 {
   "name": "@witzbould/utils",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "witzbould's utility functions",
   "main": "index.js",
   "module": "index.js",
