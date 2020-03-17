@@ -1,0 +1,35 @@
+{
+  "name": "@witzbould/utils-attr-convert",
+  "version": "1.0.0",
+  "description": "Converts between html attribues and booleans",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "eslint -f=table \"*.js\""
+  },
+  "keywords": [
+    "utils",
+    "convert",
+    "html",
+    "attribues",
+    "boolean"
+  ],
+  "author": "Tom Kopp",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^13.9.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsdoc": "^22.0.1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/witzbould/utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/witzbould/utils/issues"
+  },
+  "homepage": "https://github.com/witzbould/utils/tree/master/packages/attr-convert/#readme"
+}
