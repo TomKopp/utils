@@ -1,0 +1,36 @@
+{
+  "name": "@witzbould/utils-json-parse",
+  "version": "1.0.0",
+  "description": "Mapps a value in an input range to an output ragne",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "eslint -f=table \"*.js\""
+  },
+  "keywords": [
+    "utils",
+    "json",
+    "parse",
+    "promise",
+    "async",
+    "sync"
+  ],
+  "author": "Tom Kopp",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^13.9.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsdoc": "^22.0.1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/witzbould/utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/witzbould/utils/issues"
+  },
+  "homepage": "https://github.com/witzbould/utils/tree/master/packages/json-parse/#readme"
+}
