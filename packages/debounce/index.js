@@ -1,5 +1,3 @@
-import { ErrorFunctionExpected } from './errors';
-
 /**
  * Returns a function, that, as long as it continues to be invoked, will not
  * be triggered. The function will be called after it stops being called for
@@ -15,7 +13,7 @@ import { ErrorFunctionExpected } from './errors';
  */
 export const debounce = (func, wait, immediate = false) => {
 	if (typeof func !== 'function') {
-		throw new ErrorFunctionExpected();
+		throw new TypeError('Expected a function');
 	}
 
 	let timeout;
