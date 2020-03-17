@@ -1,5 +1,3 @@
-import { ErrorFunctionExpected } from './errors';
-
 /**
  * Returns a function, that, as long as it continues to be invoked, will only
  * trigger every N milliseconds. If `immediate` is passed, trigger the
@@ -14,7 +12,7 @@ import { ErrorFunctionExpected } from './errors';
  */
 export const throttle = (func, wait, immediate = false) => {
 	if (typeof func !== 'function') {
-		throw new ErrorFunctionExpected();
+		throw new TypeError('Expected a function');
 	}
 
 	let timeout;
@@ -49,7 +47,7 @@ export const throttle = (func, wait, immediate = false) => {
  */
 export const rAFthrottle = (func, immediate = false) => {
 	if (typeof func !== 'function') {
-		throw new ErrorFunctionExpected();
+		throw new TypeError('Expected a function');
 	}
 
 	let rAFid;
