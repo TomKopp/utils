@@ -1,7 +1,7 @@
 {
-  "name": "@witzbould/utils-u-byte2hex",
+  "name": "@witzbould/utils-number2hex",
   "version": "1.0.0",
-  "description": "Converts an unsigned byte sized integer into its hex representation",
+  "description": "Converts a number into its nearest hex representation",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -11,7 +11,7 @@
     "utils",
     "convert",
     "unsigned",
-    "byte",
+    "number",
     "hex"
   ],
   "author": "Tom Kopp",
@@ -30,5 +30,5 @@
   "bugs": {
     "url": "https://github.com/witzbould/utils/issues"
   },
-  "homepage": "https://github.com/witzbould/utils/tree/master/packages/u-byte2hex/#readme"
+  "homepage": "https://github.com/witzbould/utils/tree/master/packages/number2hex/#readme"
 }
