@@ -3,20 +3,18 @@ module.exports = {
 		"eslint:recommended",
 		"plugin:jsdoc/recommended"
 	],
-	"parser": "babel-eslint",
 	"parserOptions": {
 		"sourceType": "module",
-		"ecmaFeatures": {
-			"legacyDecorators": true
-		}
 	},
 	"env": {
 		"browser": true,
-		"es6": true
+		"node": true,
+		"es2021": true
 	},
 	"plugins": [
 		"jsdoc"
 	],
+	"ignorePatterns": ["/*.cjs"],
 	"rules": {
 		"accessor-pairs": "error",
 		"array-bracket-newline": "error",
