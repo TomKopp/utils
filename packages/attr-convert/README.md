@@ -1,3 +1,3 @@
 # AttrConvert
 
-Converts html attribues to boolean and back
+Converts html attributes to boolean and back
