@@ -4,11 +4,11 @@ Utility function that I find useful.
 
 ## AttrConvert
 
-Converts html attribues to boolean and back
+Converts html attributes to boolean and back.
 
 ## ClampValue
 
-Clamp a value between min and max (inclusive)
+Clamp a value between min and max (inclusive).
 
 ## Debounce
 
@@ -19,7 +19,16 @@ leading edge, instead of the trailing.
 
 ## MapValueRange
 
-Mapps a value in an input range to an output ragne
+Maps a value in an input range to an output range.
+
+## Number2hex
+
+Converts an unsigned byte sized integer into its hex representation.
+
+## StringCompression
+
+Compress or decompress a string with native browser APIs with 'gzip', 'deflate', or 'deflate-raw'.
+Compatible to use with atob and btoa.
 
 ## Throttle
 
@@ -29,9 +38,6 @@ function on the leading edge, instead of the trailing.
 
 There is also a version that uses `requestAnimationFrame()`.
 
-## uByte2hex
-
-Converts an unsigned byte sized integer into its hex representation
 
 
 ## Quick Notes
