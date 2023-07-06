@@ -1,0 +1,32 @@
+{
+  "name": "@witzbould/utils-string-compression",
+  "version": "1.0.0",
+  "description": "Compress or decompress a string with native browser APIs with 'gzip', 'deflate', or 'deflate-raw'. Compatible to use with atob and btoa.",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "utils",
+    "compression",
+    "decompression",
+    "browser",
+    "browser",
+    "string",
+    "btoa",
+    "atob",
+    "base64",
+    "inflate",
+    "gzip",
+    "deflate",
+    "deflate-raw"
+  ],
+  "author": "Tom Kopp",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/witzbould/utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/witzbould/utils/issues"
+  },
+  "homepage": "https://github.com/witzbould/utils/tree/master/packages/string-compression/#readme"
+}
