@@ -5,7 +5,7 @@
  * @param {'gzip'|'deflate'|'deflate-raw'} encoding Compression algorithm to use
  * @return {string} The compressed string, safe to use with `btoa`
  */
-export function compress(data, encoding) {
+export const compress = (data, encoding) => {
 	return (
 		new Response(
 			new Blob([new TextEncoder().encode(data)])
@@ -24,7 +24,7 @@ export function compress(data, encoding) {
  * @param {'gzip'|'deflate'|'deflate-raw'} encoding Decompression algorithm to use
  * @return {string} The decompressed string
  */
-export function decompress(data, encoding) {
+export const decompress = (data, encoding) => {
 	return (
 		new Response(new Blob([Uint8Array.from(data, (m) => m.codePointAt(0))])
 			.stream()
