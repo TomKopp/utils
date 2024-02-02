@@ -16,7 +16,8 @@ module.exports = {
 	],
 	'ignorePatterns': ['/*.cjs'],
 	'rules': {
-		'jsdoc/tag-lines': ['warn', 'always', { 'count': 0, 'startLines': 1 }]
+		'jsdoc/tag-lines': ['warn', 'always', { 'count': 0, 'startLines': 1 }],
+		'jsdoc/no-defaults': 'off',
 	},
 	'globals': {
 		'CompressionStream': 'readonly',
