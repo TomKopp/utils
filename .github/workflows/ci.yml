@@ -1,0 +1,78 @@
+name: CI Workflow
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x, 21.x]
+    name: Node ${{ matrix.node-version }}
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run lint
+    # - run: npm test --workspaces --if-present
+
+  release:
+    needs: validate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+    - uses: actions/checkout@v4
+    - uses: google-github-actions/release-please-action@v4
+      id: release-please
+    outputs:
+      releases_created: ${{ steps.release-please.outputs.releases_created }}
+
+  publish-npm:
+    needs: release
+    if: needs.release.outputs.releases_created == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: 'npm'
+          registry-url: https://registry.npmjs.org
+          scope: '@witzbould'
+          always-auth: true
+      - run: npm ci
+      - run: npm publish --workspaces --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+
+  # publish-gpr:
+  #   needs: release
+  #   if: needs.release.outputs.releases_created == 'true'
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     contents: read
+  #     packages: write
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: actions/setup-node@v4
+  #       with:
+  #         node-version: 20.x
+  #         cache: 'npm'
+  #         registry-url: https://npm.pkg.github.com
+  #         scope: '@witzbould'
+  #         always-auth: true
+  #     - run: npm ci
+  #     - run: npm publish --workspaces --access public
+  #       env:
+  #         NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
