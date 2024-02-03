@@ -1,7 +1,7 @@
 {
   "name": "@witzbould/utils-map-value-range",
   "version": "1.0.0",
-  "description": "Mapps a value in an input range to an output ragne",
+  "description": "Maps a value in an input range to an output range",
   "main": "index.js",
   "type": "module",
   "keywords": [
@@ -16,10 +16,11 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/witzbould/utils.git"
+    "url": "git+https://github.com/TomKopp/utils.git",
+    "directory": "packages/map-value-range"
   },
   "bugs": {
-    "url": "https://github.com/witzbould/utils/issues"
+    "url": "https://github.com/TomKopp/utils/issues"
   },
-  "homepage": "https://github.com/witzbould/utils/tree/master/packages/map-value-range/#readme"
+  "homepage": "https://github.com/TomKopp/utils/tree/master/packages/map-value-range/#readme"
 }
