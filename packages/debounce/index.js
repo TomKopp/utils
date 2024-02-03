@@ -10,6 +10,7 @@
  * @param {number} wait Time to wait before the function could be called. In Milliseconds.
  * @param {boolean} [immediate=false] Flag to indicate, that the function should be called at the leading edge of the timeout.
  * @return {Function} The debounced function.
+ * @throws {TypeError} If `func` is not a function.
  */
 export const debounce = (func, wait, immediate = false) => {
 	if (typeof func !== 'function') {
