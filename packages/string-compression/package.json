@@ -23,10 +23,11 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/witzbould/utils.git"
+    "url": "git+https://github.com/TomKopp/utils.git",
+    "directory": "packages/string-compression"
   },
   "bugs": {
-    "url": "https://github.com/witzbould/utils/issues"
+    "url": "https://github.com/TomKopp/utils/issues"
   },
-  "homepage": "https://github.com/witzbould/utils/tree/master/packages/string-compression/#readme"
+  "homepage": "https://github.com/TomKopp/utils/tree/master/packages/string-compression/#readme"
 }
