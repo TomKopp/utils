@@ -1,7 +1,7 @@
 {
   "name": "@witzbould/utils-json-parse",
   "version": "1.0.0",
-  "description": "Maps a value in an input range to an output range",
+  "description": "Wrapper around Json.parse() returns a Promise or data-error object",
   "main": "index.js",
   "type": "module",
   "keywords": [
