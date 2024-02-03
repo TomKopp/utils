@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/TomKopp/utils/compare/utils-json-parse-v3.0.0...utils-json-parse-v3.0.1) (2024-02-03)
+
+
+### Bug Fixes
+
+* **json-parse:** :memo: fix description ([656052e](https://github.com/TomKopp/utils/commit/656052eab6bbc805aeffca28161fa548792935dd))
+
 ## [3.0.0](https://github.com/TomKopp/utils/compare/utils-json-parse-v2.2.1...utils-json-parse-v3.0.0) (2024-02-03)
 
 
