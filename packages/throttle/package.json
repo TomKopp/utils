@@ -15,10 +15,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/witzbould/utils.git"
+    "url": "git+https://github.com/TomKopp/utils.git"
   },
   "bugs": {
-    "url": "https://github.com/witzbould/utils/issues"
+    "url": "https://github.com/TomKopp/utils/issues"
   },
-  "homepage": "https://github.com/witzbould/utils/tree/master/packages/throttle/#readme"
+  "homepage": "https://github.com/TomKopp/utils/tree/master/packages/throttle/#readme"
 }
