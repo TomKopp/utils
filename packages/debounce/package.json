@@ -1,6 +1,6 @@
 {
   "name": "@witzbould/utils-debounce",
-  "version": "1.0.0",
+  "version": "2.2.2",
   "description": "Debounces continues calls to a function",
   "main": "index.js",
   "type": "module",
