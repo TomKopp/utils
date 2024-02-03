@@ -1,6 +1,6 @@
 {
   "name": "@witzbould/utils-clamp-value",
-  "version": "1.0.0",
+  "version": "2.2.2",
   "description": "Clamp value between min and max",
   "main": "index.js",
   "type": "module",
