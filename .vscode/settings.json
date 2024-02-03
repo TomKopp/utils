@@ -1,0 +1,12 @@
+{
+    "conventionalCommits.scopes": [
+        "attr-convert",
+        "clamp-value",
+        "debounce",
+        "json-parse",
+        "map-value-range",
+        "number2hex",
+        "string-compression",
+        "throttle"
+    ]
+}
