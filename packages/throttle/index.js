@@ -9,6 +9,7 @@
  * @param {number} wait Time to wait between each call. In Milliseconds.
  * @param {boolean} [immediate=false] Flag to indicate that the function should be called at the leading edge of the timeout.
  * @return {Function} The throttled function
+ * @throws {TypeError} If `func` is not a function.
  */
 export const throttle = (func, wait, immediate = false) => {
 	if (typeof func !== 'function') {
@@ -44,6 +45,7 @@ export const throttle = (func, wait, immediate = false) => {
  * @param {Function} func Callable to be throttled.
  * @param {boolean} [immediate=false] Flag to indicate that the function should be called at the leading edge of the timeout.
  * @return {Function} The throttled function
+ * @throws {TypeError} If `func` is not a function.
  */
 export const rAFthrottle = (func, immediate = false) => {
 	if (typeof func !== 'function') {
