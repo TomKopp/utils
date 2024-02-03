@@ -1,6 +1,6 @@
 {
   "name": "@witzbould/utils-attr-convert",
-  "version": "1.0.0",
+  "version": "2.2.2",
   "description": "Converts between html attributes and booleans",
   "main": "index.js",
   "type": "module",

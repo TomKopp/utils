@@ -1,6 +1,6 @@
 {
   "name": "@witzbould/utils-json-parse",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "Maps a value in an input range to an output range",
   "main": "index.js",
   "type": "module",

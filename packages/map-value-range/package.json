@@ -1,6 +1,6 @@
 {
   "name": "@witzbould/utils-map-value-range",
-  "version": "1.0.0",
+  "version": "2.2.2",
   "description": "Maps a value in an input range to an output range",
   "main": "index.js",
   "type": "module",
