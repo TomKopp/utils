@@ -51,8 +51,7 @@ jobs:
           registry-url: https://registry.npmjs.org
           scope: '@witzbould'
           always-auth: true
-      - run: npm ci
-      - run: npm publish --workspaces --access public
+      - run: npm run --workspaces publish-npm
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
 
