@@ -6,5 +6,6 @@
   "packages/map-value-range": "2.2.2",
   "packages/number2hex": "2.2.2",
   "packages/string-compression": "2.3.0",
-  "packages/throttle": "2.2.2"
+  "packages/throttle": "2.2.2",
+  "packages/fetch-helper": "1.0.0"
 }

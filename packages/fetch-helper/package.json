@@ -1,6 +1,6 @@
 {
   "name": "@witzbould/utils-fetch-helper",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Collection of helper functions for fetch",
   "main": "index.js",
   "type": "module",
