@@ -3,6 +3,7 @@
         "attr-convert",
         "clamp-value",
         "debounce",
+        "fetch-helper",
         "json-parse",
         "map-value-range",
         "number2hex",

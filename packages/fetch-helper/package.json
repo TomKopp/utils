@@ -1,0 +1,28 @@
+{
+  "name": "@witzbould/utils-fetch-helper",
+  "version": "0.0.0",
+  "description": "Collection of helper functions for fetch",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "utils",
+    "fetch",
+    "helper",
+    "response",
+    "content-type"
+  ],
+  "author": "Tom Kopp",
+  "license": "ISC",
+  "scripts": {
+    "publish-npm": "[[ $(npm view $npm_package_name@$npm_package_version --silent) ]] && echo \"$npm_package_name@$npm_package_version already exists!\" || npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomKopp/utils.git",
+    "directory": "packages/fetch-helper"
+  },
+  "bugs": {
+    "url": "https://github.com/TomKopp/utils/issues"
+  },
+  "homepage": "https://github.com/TomKopp/utils/tree/master/packages/fetch-helper/#readme"
+}
