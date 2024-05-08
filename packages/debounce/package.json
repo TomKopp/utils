@@ -11,6 +11,9 @@
   ],
   "author": "Tom Kopp",
   "license": "ISC",
+  "scripts": {
+    "publish-npm": "[[ $(npm view $npm_package_name@$npm_package_version --silent) ]] && echo \"$npm_package_name@$npm_package_version already exists!\" || npm publish --access public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TomKopp/utils.git",
