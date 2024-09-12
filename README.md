@@ -1,6 +1,10 @@
 # Witzbould's Utils
 
-Utility function that I find useful.
+Utility functions that I find useful.
+
+## ArrayBuffer
+
+Utility functions for ArrayBuffer like Base64 conversion using browser apis.
 
 ## AttrConvert
 

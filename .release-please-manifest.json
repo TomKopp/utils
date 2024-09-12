@@ -1,11 +1,12 @@
 {
+  "packages/array-buffer": "1.0.0",
   "packages/attr-convert": "2.2.2",
   "packages/clamp-value": "2.2.2",
   "packages/debounce": "2.2.2",
+  "packages/fetch-helper": "1.0.0",
   "packages/json-parse": "3.0.1",
   "packages/map-value-range": "2.2.2",
   "packages/number2hex": "2.2.2",
   "packages/string-compression": "2.3.0",
-  "packages/throttle": "2.2.2",
-  "packages/fetch-helper": "1.0.0"
+  "packages/throttle": "2.2.2"
 }
