@@ -1,5 +1,5 @@
 {
-  "packages/array-buffer": "1.0.0",
+  "packages/array-buffer": "1.1.0",
   "packages/attr-convert": "2.2.2",
   "packages/clamp-value": "2.2.2",
   "packages/debounce": "2.2.2",
