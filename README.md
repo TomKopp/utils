@@ -6,6 +6,10 @@ Utility functions that I find useful.
 
 Utility functions for ArrayBuffer like Base64 conversion using browser apis.
 
+## ArrayMerge
+
+Merges two arrays into one and removes duplicates
+
 ## AttrConvert
 
 Converts html attributes to boolean and back.

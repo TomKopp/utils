@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "array-buffer",
+        "array-merge",
         "attr-convert",
         "clamp-value",
         "debounce",
