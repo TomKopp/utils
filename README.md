@@ -21,6 +21,19 @@ be triggered. The function will be called after it stops being called for
 N milliseconds. If `immediate` is passed, trigger the function on the
 leading edge, instead of the trailing.
 
+## FetchHelper
+
+Extracts the content from the body of a Response object either\
+as json (if Content-Type=application/json),\
+as text (if Content-Type=text/*),\
+or as a Blob if all else fails.
+
+## JsonParse
+
+Wrapper around Json.parse() to catch any errors and return a Promise.\
+The synchronous version returns an Object with data and error properties.\
+If the parsing failed the error is set. Otherwise it is undefined.
+
 ## MapValueRange
 
 Maps a value in an input range to an output range.
