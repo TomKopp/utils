@@ -1,5 +1,4 @@
-const arrayBufferToBase64 = (buffer) => btoa(Array.from(new Uint8Array(buffer), (x) => String.fromCodePoint(x)).join(''));
-const base64ToArrayBuffer = (base64) => Uint8Array.from(atob(base64), (m) => m.codePointAt(0)).buffer;
+import { arrayBufferToBase64, base64ToArrayBuffer } from '@witzbould/utils-array-buffer';
 
 /**
  * Generates a cryptographic key using the specified algorithm parameters.
