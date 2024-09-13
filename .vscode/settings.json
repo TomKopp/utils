@@ -5,6 +5,7 @@
         "attr-convert",
         "clamp-value",
         "debounce",
+        "encryption",
         "fetch-helper",
         "json-parse",
         "map-value-range",

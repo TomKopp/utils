@@ -1,0 +1,31 @@
+{
+  "name": "@witzbould/utils-encryption",
+  "version": "0.0.0",
+  "description": "Debounces continues calls to a function",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "utils",
+    "encryption",
+    "decryption"
+  ],
+  "author": "Tom Kopp",
+  "license": "ISC",
+  "scripts": {
+    "publish-npm": "npm view \"$npm_package_name@$npm_package_version\" >/dev/null 2>/dev/null && echo \"$npm_package_name@$npm_package_version exists!\" || npm publish --access public"
+  },
+  "files": [
+    "index.js",
+    "node.js",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomKopp/utils.git",
+    "directory": "packages/encryption"
+  },
+  "bugs": {
+    "url": "https://github.com/TomKopp/utils/issues"
+  },
+  "homepage": "https://github.com/TomKopp/utils/tree/master/packages/encryption/#readme"
+}

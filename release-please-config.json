@@ -9,6 +9,7 @@
     "packages/attr-convert": {},
     "packages/clamp-value": {},
     "packages/debounce": {},
+    "packages/encryption": {},
     "packages/fetch-helper": {},
     "packages/json-parse": {},
     "packages/map-value-range": {},
