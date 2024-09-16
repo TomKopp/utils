@@ -16,8 +16,7 @@
   },
   "files": [
     "index.js",
-    "node.js",
-    "README.md"
+    "node.js"
   ],
   "dependencies": {
     "@witzbould/utils-array-buffer": "1.1.0"
