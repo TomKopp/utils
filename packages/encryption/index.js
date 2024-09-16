@@ -4,17 +4,16 @@ import { arrayBufferToBase64, base64ToArrayBuffer } from '@witzbould/utils-array
  * Generates a cryptographic key using the specified algorithm parameters.
  *
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/generateKey#algorithm}
- * @param {object} [algorithmParams={ name: 'AES-GCM' }] - The algorithm parameters for key generation.
+ * @param {object} [algorithmParams={ name: 'AES-GCM', length: 128 }] - The algorithm parameters for key generation.
  * @param {string} algorithmParams.name - The name of the algorithm to use for key generation.
+ * @param {number} algorithmParams.length - The length of the key in bits.
  * @return {Promise<CryptoKey>} A promise that resolves to the generated cryptographic key.
  */
-export const generateKey = (algorithmParams = { name: 'AES-GCM' }) => {
-	return globalThis.crypto.subtle.generateKey(
-		algorithmParams,
-		true,
-		['encrypt', 'decrypt']
-	);
-};
+export const generateKey = (algorithmParams = { name: 'AES-GCM', length: 128 }) => globalThis.crypto.subtle.generateKey(
+	algorithmParams,
+	true,
+	['encrypt', 'decrypt']
+);
 
 /**
  * Generates a cryptographic key from a password and salt using PBKDF2 and AES-GCM.
