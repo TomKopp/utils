@@ -38,12 +38,12 @@ export const generateKeyFromPasswordAndSalt = async (password, salt) => {
 /**
  * Encrypts a given plaintext using AES encryption.
  *
- * @param {string} plainText - The plaintext to be encrypted.
  * @param {CryptoKey} key - The AES key to use for encryption. The key's algorithm name should be either 'AES-GCM' or 'AES-CBC'.
+ * @param {string} plainText - The plaintext to be encrypted.
  * @return {Promise<string>} A promise that resolves to the encrypted text in the format 'iv:encryptedData', where both parts are base64 encoded.
  * @throws {Error} If the provided algorithm is not supported.
  */
-export const encryptAES = async (plainText, key) => {
+export const encryptAES = async (key, plainText) => {
 	let ivLength;
 	switch (key.algorithm.name) {
 		case 'AES-GCM': // AES-GCM typically uses a 12-byte IV
@@ -64,11 +64,12 @@ export const encryptAES = async (plainText, key) => {
 /**
  * Decrypts a given AES encrypted text using the provided key.
  *
- * @param {string} cipherText - The AES encrypted text in the format 'iv:encrypted'.
  * @param {CryptoKey} key - The AES key used to encrypt the cipher.
+ * @param {string} cipherText - The AES encrypted text in the format 'iv:encrypted'.
  * @return {Promise<string>} - A promise that resolves to the decrypted text.
+ * @throws {Error} If key cannot be used to decipher the text.
  */
-export const decryptAES = async (cipherText, key) => {
+export const decryptAES = async (key, cipherText) => {
 	const [ivEncoded, encryptedEncoded] = cipherText.split(':');
 	const iv = base64ToArrayBuffer(ivEncoded);
 	const encrypted = base64ToArrayBuffer(encryptedEncoded);
