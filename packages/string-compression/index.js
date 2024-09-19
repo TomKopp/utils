@@ -3,7 +3,7 @@
  *
  * @param {string} data Input string that should be compressed
  * @param {'gzip'|'deflate'|'deflate-raw'} encoding Compression algorithm to use
- * @return {string} The compressed string, safe to use with `btoa`
+ * @return {Promise<string>} The compressed string, safe to use with `btoa`
  */
 export const compress = (data, encoding) => {
 	return (
@@ -15,14 +15,14 @@ export const compress = (data, encoding) => {
 			.arrayBuffer()
 			.then((buffer) => Array.from(new Uint8Array(buffer), (x) => String.fromCodePoint(x)).join(''))
 	);
-}
+};
 
 /**
  * Decompress a binary string representation with browser native APIs in to a normal js string
  *
  * @param {string} data Binary string that should be decompressed, e.g. the output from `atob`
  * @param {'gzip'|'deflate'|'deflate-raw'} encoding Decompression algorithm to use
- * @return {string} The decompressed string
+ * @return {Promise<string>} The decompressed string
  */
 export const decompress = (data, encoding) => {
 	return (
@@ -31,4 +31,4 @@ export const decompress = (data, encoding) => {
 			.pipeThrough(new DecompressionStream(encoding))
 		).text()
 	);
-}
+};

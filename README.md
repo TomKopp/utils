@@ -6,6 +6,10 @@ Utility functions that I find useful.
 
 Utility functions for ArrayBuffer like Base64 conversion using browser apis.
 
+## ArrayMerge
+
+Merges two arrays into one and removes duplicates
+
 ## AttrConvert
 
 Converts html attributes to boolean and back.
@@ -20,6 +24,13 @@ Returns a function, that, as long as it continues to be invoked, will not
 be triggered. The function will be called after it stops being called for
 N milliseconds. If `immediate` is passed, trigger the function on the
 leading edge, instead of the trailing.
+
+## Encryption
+
+Encrypts and decrypts a string using **native** browser apis.\
+For simplicity only 'AES-GCM' and 'AES-CBC' algorithms are implemented.
+
+There is a random 'AES-GCM' key generator and one that derives a key from a password and salt.
 
 ## FetchHelper
 

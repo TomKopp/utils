@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "bun",
+            "internalConsoleOptions": "neverOpen",
+            "request": "launch",
+            "name": "Bun - Debug File",
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": false,
+            "watchMode": false
+        },
+        {
+            "type": "bun",
+            "internalConsoleOptions": "neverOpen",
+            "request": "launch",
+            "name": "Bun - Run File",
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "noDebug": true,
+            "watchMode": false
+        },
+        {
+            "type": "bun",
+            "internalConsoleOptions": "neverOpen",
+            "request": "attach",
+            "name": "Bun - Attach",
+            "url": "ws://localhost:6499/",
+            "stopOnEntry": false
+        },
+        {
+            "type": "node",
+            "internalConsoleOptions": "neverOpen",
+            "request": "launch",
+            "name": "Node - Debug File",
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": false,
+            // "runtimeArgs": ["--inspect-brk"]
+        },
+        {
+            "type": "node",
+            "internalConsoleOptions": "neverOpen",
+            "request": "launch",
+            "name": "Node - Run File",
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": false,
+        },
+        {
+            "type": "node",
+            "internalConsoleOptions": "neverOpen",
+            "request": "attach",
+            "name": "Node - Attach",
+            "port": 9229,
+            "skipFiles": ["<node_internals>/**"]
+        }
+    ]
+}
