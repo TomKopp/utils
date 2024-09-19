@@ -1,6 +1,6 @@
 {
   "name": "@witzbould/utils-encryption",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Encrypts and decrypts a string using **native** browser apis.",
   "main": "index.js",
   "type": "module",
