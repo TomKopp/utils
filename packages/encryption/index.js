@@ -65,7 +65,7 @@ export const encryptAES = async (key, plainText) => {
  * Decrypts a given AES encrypted text using the provided key.
  *
  * @param {CryptoKey} key - The AES key used to encrypt the cipher.
- * @param {string} cipherText - The AES encrypted text in the format 'iv:encrypted'.
+ * @param {string} cipherText - The AES encrypted text in the format 'iv:encrypted', where both parts are base64 encoded.
  * @return {Promise<string>} - A promise that resolves to the decrypted text.
  * @throws {Error} If key cannot be used to decipher the text.
  */
