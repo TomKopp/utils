@@ -4,7 +4,7 @@
   "packages/attr-convert": "2.2.2",
   "packages/clamp-value": "2.2.2",
   "packages/debounce": "2.2.2",
-  "packages/encryption": "0.0.1",
+  "packages/encryption": "1.0.0",
   "packages/fetch-helper": "1.0.0",
   "packages/json-parse": "3.0.1",
   "packages/map-value-range": "2.2.2",
