@@ -1,6 +1,6 @@
 {
   "name": "@witzbould/utils-array-merge",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Merges two arrays into one and removes duplicates",
   "main": "index.js",
   "type": "module",
