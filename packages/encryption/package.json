@@ -1,13 +1,21 @@
 {
   "name": "@witzbould/utils-encryption",
   "version": "1.1.0",
-  "description": "Debounces continues calls to a function",
+  "description": "Encrypts and decrypts a string using **native** browser apis.",
   "main": "index.js",
   "type": "module",
   "keywords": [
     "utils",
     "encryption",
-    "decryption"
+    "decryption",
+    "encrypt",
+    "decrypt",
+    "crypto",
+    "aes",
+    "browser",
+    "password",
+    "keygen",
+    "node"
   ],
   "author": "Tom Kopp",
   "license": "ISC",
