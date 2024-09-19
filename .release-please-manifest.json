@@ -1,10 +1,10 @@
 {
   "packages/array-buffer": "1.1.0",
-  "packages/array-merge": "1.0.0",
+  "packages/array-merge": "1.1.0",
   "packages/attr-convert": "2.2.2",
   "packages/clamp-value": "2.2.2",
   "packages/debounce": "2.2.2",
-  "packages/encryption": "1.0.0",
+  "packages/encryption": "1.1.0",
   "packages/fetch-helper": "1.0.0",
   "packages/json-parse": "3.0.1",
   "packages/map-value-range": "2.2.2",
