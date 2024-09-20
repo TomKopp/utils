@@ -1,6 +1,6 @@
 {
   "name": "@witzbould/utils-string-compression",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "Compress or decompress a string with native browser APIs with 'gzip', 'deflate', or 'deflate-raw'. Compatible to use with atob and btoa.",
   "main": "index.js",
   "type": "module",
