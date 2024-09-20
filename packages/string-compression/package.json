@@ -24,6 +24,9 @@
   "scripts": {
     "publish-npm": "npm view \"$npm_package_name@$npm_package_version\" >/dev/null 2>/dev/null && echo \"$npm_package_name@$npm_package_version exists!\" || npm publish --access public"
   },
+  "dependencies": {
+    "@witzbould/utils-array-buffer": "1.2.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TomKopp/utils.git",

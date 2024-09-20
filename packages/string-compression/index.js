@@ -1,3 +1,5 @@
+import { arrayBufferToBinaryString, binaryStringToArrayBuffer } from '@witzbould/utils-array-buffer';
+
 /**
  *	Compress a string with browser native APIs into a binary string representation
  *
@@ -13,7 +15,7 @@ export const compress = (data, encoding) => {
 				.pipeThrough(new CompressionStream(encoding))
 		)
 			.arrayBuffer()
-			.then((buffer) => Array.from(new Uint8Array(buffer), (x) => String.fromCodePoint(x)).join(''))
+			.then(arrayBufferToBinaryString)
 	);
 };
 
@@ -26,9 +28,10 @@ export const compress = (data, encoding) => {
  */
 export const decompress = (data, encoding) => {
 	return (
-		new Response(new Blob([Uint8Array.from(data, (m) => m.codePointAt(0))])
-			.stream()
-			.pipeThrough(new DecompressionStream(encoding))
+		new Response(
+			new Blob([binaryStringToArrayBuffer(data)])
+				.stream()
+				.pipeThrough(new DecompressionStream(encoding))
 		).text()
 	);
 };
